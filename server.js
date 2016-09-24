@@ -5,3 +5,7 @@ var port = 8080;
 app.listen(port, function() {
   console.log('app started');
 });
+
+app.get('/', function (req, res) {
+  app.send('hello!');
+});
