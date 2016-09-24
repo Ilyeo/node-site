@@ -3,6 +3,11 @@ body {
   line-height: 1.5;
 }
 
+header .navbar {
+  border-radius: 0;
+  margin: 0;
+}
+
 .hero {
  background-image: url(../img/planet.jpg);
  background-repeat: no-repeat;
