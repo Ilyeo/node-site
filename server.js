@@ -7,6 +7,10 @@ var port = 8080;
 var router = require('./app/routes');
 app.use('/',router);
 
+// use ejs and express Layouts
+app.set('view engine', 'ejs');
+app.use(expressLayouts);
+
 // set static files (css and images, etc) Location
 app.use(express.static(__dirname + '/public'));
 
