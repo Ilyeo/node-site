@@ -10,7 +10,6 @@ module.exports = router;
 
 // route for our homepage
 router.get('/', function(req, res) {
-  res.send('hello roger!');
   res.sendFile(path.join(__dirname,'../index.html'));
 });
 
