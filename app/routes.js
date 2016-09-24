@@ -1,5 +1,6 @@
 // require express
 var express = require('express');
+var path = require('path');
 
 // create our router object
 var router = express.Router();
@@ -10,6 +11,7 @@ module.exports = router;
 // route for our homepage
 router.get('/', function(req, res) {
   res.send('hello roger!');
+  res.sendFile(path.join(__dirname,'../index.html'));
 });
 
 // route for our about page
