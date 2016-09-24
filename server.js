@@ -6,10 +6,12 @@ app.listen(port, function() {
   console.log('app started');
 });
 
+// route for our homepage
 app.get('/', function(req, res) {
   res.send('hello roger!');
 });
 
+// route for our about page
 app.get('/about', function(req, res) {
   res.send('hello about!');
 });
