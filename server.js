@@ -7,7 +7,7 @@ var router = require('./app/routes');
 app.use('/',router);
 
 // set static files (css and images, etc) Location
-app.use(express.static(__dirname + '/public');
+app.use(express.static(__dirname + '/public'));
 
 app.listen(port, function() {
   console.log('app started');
