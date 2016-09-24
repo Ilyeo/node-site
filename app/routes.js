@@ -1,14 +1,18 @@
+// require express
 var express = require('express');
 
+// create our router object
+var router = express.Router();
+
 // route for our homepage
-app.get('/', function(req, res) {
+router.get('/', function(req, res) {
   res.send('hello roger!');
 });
 
 // route for our about page
-app.get('/about', function(req, res) {
+router.get('/about', function(req, res) {
   res.send('hello about!');
 });
 
-app.get('/contact');
-app.post('/contact');
+router.get('/contact');
+router.post('/contact');
