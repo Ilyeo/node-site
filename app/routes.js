@@ -15,7 +15,7 @@ router.get('/', function(req, res) {
 
 // route for our about page
 router.get('/about', function(req, res) {
-  res.send('hello about!');
+  res.sendFile(path.join(__dirname,'../about.html'));
 });
 
 router.get('/contact');
