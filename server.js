@@ -6,6 +6,6 @@ app.listen(port, function() {
   console.log('app started');
 });
 
-app.get('/', function (req, res) {
-  app.send('hello!');
+app.get('/', function(req, res) {
+  res.send('hello!');
 });
