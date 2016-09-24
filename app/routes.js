@@ -1,3 +1,5 @@
+var express = require('express');
+
 // route for our homepage
 app.get('/', function(req, res) {
   res.send('hello roger!');
