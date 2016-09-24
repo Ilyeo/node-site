@@ -7,5 +7,12 @@ app.listen(port, function() {
 });
 
 app.get('/', function(req, res) {
-  res.send('hello!');
+  res.send('hello roger!');
 });
+
+app.get('/about', function(req, res) {
+  res.send('hello about!');
+});
+
+app.get('/contact');
+app.post('/contact');
