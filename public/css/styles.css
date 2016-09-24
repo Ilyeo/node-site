@@ -1,3 +1,8 @@
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .hero {
  background-image: url(../img/planet.jpg);
  background-repeat: no-repeat;
