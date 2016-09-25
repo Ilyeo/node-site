@@ -8,6 +8,9 @@ var port = 8080;
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
 
+// use body parser
+app.use(bodyParser.urlencoded());
+
 // route our app
 var router = require('./app/routes');
 app.use('/',router);
