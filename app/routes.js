@@ -18,7 +18,8 @@ router.get('/about', function(req, res) {
   var users = [
     { name: 'Angie', email: 'angie@planet.io', avatar: 'http://placekitten.com/300/300' },
     { name: 'Tita', email: 'tita@planet.io', avatar: 'http://placekitten.com/400/400' },
-    { name: 'Isra', email: 'isra@planet.io', avatar: 'http://placekitten.com/500/500' }
+    { name: 'Isra', email: 'isra@planet.io', avatar: 'http://placekitten.com/500/500' },
+    { name: 'Roger', email: 'roger@planet.io', avatar: 'http://placekitten.com/700/700' }
   ];
 
   res.render('pages/about', { users: users });
