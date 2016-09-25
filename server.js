@@ -1,5 +1,6 @@
 var express = require('express');
 var expressLayouts = require('express-ejs-layouts');
+var bodyParser = require('body-parser');
 var app = express();
 var port = 8080;
 
