@@ -15,7 +15,13 @@ router.get('/', function(req, res) {
 
 // route for our about page
 router.get('/about', function(req, res) {
-  res.render('pages/about');
+  var users = [
+    { name: 'Angie', email: 'angie@planet.io', avatar: 'http://placekitten.com/300/300' },
+    { name: 'Tita', email: 'tita@planet.io', avatar: 'http://placekitten.com/400/400' },
+    { name: 'Isra', email: 'isra@planet.io', avatar: 'http://placekitten.com/500/500' }
+  ];
+
+  res.render('pages/about', { users: users });
 });
 
 // route for our contact page
